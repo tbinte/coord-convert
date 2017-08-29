@@ -1,0 +1,27 @@
+{
+  "name": "coord-convert",
+  "version": "0.0.1",
+  "description": "Convert Coordinates from DM to Decimal and vice versa",
+  "main": "script.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter nyan"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tbinte/coord-convert.git"
+  },
+  "keywords": [
+    "converter",
+    "coordinates"
+  ],
+  "author": "Thomas Binte",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tbinte/coord-convert/issues"
+  },
+  "homepage": "https://github.com/tbinte/coord-convert#readme",
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "mocha": "^3.5.0"
+  }
+}
