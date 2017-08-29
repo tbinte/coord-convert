@@ -1,6 +1,8 @@
 coord-convert-dm-decimal
 =========
 
+[![Build Status](https://travis-ci.org/tbinte/coord-convert.svg?branch=v0.0.1)](https://travis-ci.org/tbinte/coord-convert)
+
 A small library that convert one part of geographical coordinates from degree minutes format to decimal format.
 
 
@@ -22,6 +24,8 @@ A small library that convert one part of geographical coordinates from degree mi
   * `N51° 25.322`
   * `W013° 05.258`
   * `S050° 23.748`
+
+  Returns `null` if coordinate is not properly formatted.
 
 
 ## Tests
