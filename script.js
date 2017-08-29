@@ -1,11 +1,4 @@
 'use strict';
-/* var dm = "N51° 25.322"; */
-/* var dm = "E007° 00.165"; */
-
-/* var re3 = /(([NS]\d{2}|[EW]\d{3})(°|\s|°\s))(\d{2}(\.|\,)\d{3})/;
-
-convertDMtoDecimal(dm);
- */
 
 /**
  * Adds commas to a number

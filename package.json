@@ -1,7 +1,7 @@
 {
-  "name": "coord-convert",
+  "name": "coord-convert-dm-decimal",
   "version": "0.0.1",
-  "description": "Convert Coordinates from DM to Decimal and vice versa",
+  "description": "Convert Coordinates from Degree Minutes to Decimal",
   "main": "script.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha --reporter nyan"
@@ -23,5 +23,8 @@
   "devDependencies": {
     "chai": "^4.1.1",
     "mocha": "^3.5.0"
+  },
+  "engines": {
+    "node": ">=7.0.0"
   }
 }
