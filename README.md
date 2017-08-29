@@ -1,7 +1,7 @@
 coord-convert-dm-decimal
 =========
 
-A small library that convert geographical coordinates from degree minutes format to decimal format.
+A small library that convert one part of geographical coordinates from degree minutes format to decimal format.
 
 
 ## Installation
@@ -16,6 +16,12 @@ A small library that convert geographical coordinates from degree minutes format
   
   
   Output should be `7.00275`
+
+  Example Input values:
+  * `E007° 00.165`
+  * `N51° 25.322`
+  * `W013° 05.258`
+  * `S050° 23.748`
 
 
 ## Tests

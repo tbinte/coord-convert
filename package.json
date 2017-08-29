@@ -1,7 +1,7 @@
 {
   "name": "coord-convert-dm-decimal",
   "version": "0.0.1",
-  "description": "Convert Coordinates from Degree Minutes to Decimal",
+  "description": "A small library that convert one part of geographical coordinates from degree minutes format to decimal format.",
   "main": "script.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha --reporter nyan"
