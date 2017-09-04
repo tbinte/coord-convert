@@ -3,7 +3,7 @@ coord-convert-dm-decimal
 
 [![Build Status](https://travis-ci.org/tbinte/coord-convert.svg?branch=v0.0.1)](https://travis-ci.org/tbinte/coord-convert)
 
-A small library that convert one part of geographical coordinates from degree minutes format to decimal format.
+A small library that convert one part of geographical coordinates from degree minutes format to decimal format. More conversions to follow.
 
 
 ## Installation
