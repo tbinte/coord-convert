@@ -1,11 +1,8 @@
 'use strict';
 
-/**
- * Adds commas to a number
- * @param {string} comp
- * @return {number}
- */
-module.exports = function convertDMtoDecimal(comp) {
+var exports = module.exports = {};
+
+exports.convertDMtoDecimal = function(comp) {
     var re1 = /[0-5]\d\.\d{3}/;
     var re2 = /(([NS][0-8]\d|[EW][0-1][0-8]\d)(°|\s|°\s))/;
     var re4 = /^(W|S)/;
@@ -37,6 +34,10 @@ module.exports = function convertDMtoDecimal(comp) {
 
     console.log(convertedCoordinates);
     return convertedCoordinates;
+}
+
+exports.convertDecimaltoDM = function(comp) {
+    return 'runs';
 }
 
 function convertDegreesToDecimal(degrees) {
