@@ -3,7 +3,7 @@ coord-convert-dm-decimal
 
 [![Build Status](https://travis-ci.org/tbinte/coord-convert.svg?branch=v0.0.1)](https://travis-ci.org/tbinte/coord-convert)
 
-A small library that convert one part of geographical coordinates from degree minutes format to decimal format. More conversions to follow.
+A small library that convert one part of geographical coordinates from degree minutes format to decimal format and vice versa. More conversions to follow.
 
 
 ## Installation
@@ -12,18 +12,25 @@ A small library that convert one part of geographical coordinates from degree mi
 
 ## Usage
 
-    var convertDMtoDecimal = require('../script');
+  ### import
+  var convert = require('../script');
 
-    var convertedCoordinates = convertDMtoDecimal('E007° 00.165');
-  
-  
-  Output should be `7.00275`
+  ### from DM to decimal 
+  var convertedCoordinates = convert.convertDMtoDecimal('E007° 00.165');
 
-  Example Input values:
+  ### from decimal latitude to DM
+  var convertedCoordinates = convert.convertDecimaltoDMLat(51.23485834);
+  
+  ### from decimal longitude to DM
+  var convertedCoordinates = convert.convertDecimaltoDMLng(7.445273);
+
+  ## Example Input values:
   * `E007° 00.165`
   * `N51° 25.322`
   * `W013° 05.258`
   * `S050° 23.748`
+  * `51.23485834`
+  * `7.445273`
 
   Returns `null` if coordinate is not properly formatted.
 
@@ -31,6 +38,14 @@ A small library that convert one part of geographical coordinates from degree mi
 ## Tests
 
   `npm test`
+
+## Changelog
+
+### 1.0.0
+Added Decimal to DM functions
+
+### 0.0.1
+Implemented convert from DM to Decimal
 
 ## Contributing
 

@@ -1,7 +1,7 @@
 {
   "name": "coord-convert",
-  "version": "0.0.1",
-  "description": "A small library that convert one part of geographical coordinates from degree minutes format to decimal format. More conversions to follow.",
+  "version": "1.0.0",
+  "description": "A small library that convert one part of geographical coordinates from degree minutes format to decimal format and vice versa. More conversions to follow.",
   "main": "script.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha --reporter nyan"
