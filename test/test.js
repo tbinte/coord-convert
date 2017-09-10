@@ -36,10 +36,63 @@ describe('Convert DM to Decimal', function() {
     });
 });
 
-describe('Convert Decimal to DM', function() {
+describe('Convert Decimal Latitude to DM', function() {
 
-    it('should return runs', function() {
-        var result = convert.convertDecimaltoDM('test');
-        expect(result).to.equal('runs');
-    })
+    it('should convert northern lat correctly', function() {
+        var result = convert.convertDecimaltoDMLat(51);
+        expect(result).to.equal('N51° 00.000');
+    });
+
+    it('should convert southern lat correctly', function() {
+        var result = convert.convertDecimaltoDMLat(-51);
+        expect(result).to.equal('S51° 00.000');
+    });
+
+    it('should return null on too low values', function() {
+        var result = convert.convertDecimaltoDMLat(-100);
+        expect(result).to.be.null;
+    });
+
+    it('should return null on too high values', function() {
+        var result = convert.convertDecimaltoDMLat(100);
+        expect(result).to.be.null;
+    });
+
+    it('should convert coordinates correctly', function() {
+        var result = convert.convertDecimaltoDMLat(43.63871944444445);
+        expect(result).to.be.equal('N43° 38.323');
+    });
+
+    it('should convert coordinates correctly', function() {
+        var result = convert.convertDecimaltoDMLat(7);
+        expect(result).to.be.equal('N07° 00.000');
+    });
 });
+
+describe('Convert Decimal Longitude to DM', function() {
+    
+        it('should convert eastern lat correctly', function() {
+            var result = convert.convertDecimaltoDMLng(7);
+            expect(result).to.equal('E007° 00.000');
+        });
+    
+        it('should convert western lat correctly', function() {
+            var result = convert.convertDecimaltoDMLng(-7);
+            expect(result).to.equal('W007° 00.000');
+        });
+    
+        it('should return null on too low values', function() {
+            var result = convert.convertDecimaltoDMLng(-190);
+            expect(result).to.be.null;
+        });
+    
+        it('should return null on too high values', function() {
+            var result = convert.convertDecimaltoDMLng(190);
+            expect(result).to.be.null;
+        });
+    
+        it('should convert coordinates correctly', function() {
+            var result = convert.convertDecimaltoDMLng(43.63871944444445);
+            expect(result).to.be.equal('E043° 38.323');
+        })
+    });
